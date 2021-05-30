@@ -1,5 +1,6 @@
 package com.example.mn_project_2
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -42,6 +43,7 @@ class DetailsFragment : Fragment() {
         description.text = file.description
         size.text = file.size
         downloads.text = file.downloads
+        image.setImageURI(Uri.parse(file.image))
         return view
     }
 

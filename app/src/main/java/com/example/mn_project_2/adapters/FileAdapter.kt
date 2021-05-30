@@ -1,5 +1,6 @@
 package com.example.mn_project_2.adapters
 
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,7 +36,7 @@ class FileAdapter(val fileList: ArrayList<File>, val onItemClicked: (Int)->Unit)
             val imageItem  = itemView.findViewById(R.id.imageItem) as ImageView
             nameItem.text = file.name
             downloadsItem.text = file.downloads
-//            imageItem.setImageURI(file.image)
+            imageItem.setImageURI(Uri.parse(file.image))
         }
     }
 }
