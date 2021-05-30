@@ -7,15 +7,107 @@
     tools:context=".AboutFragment"
     android:background="@color/lighGray">
 
-    <TextView
-        android:id="@+id/textView2"
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Group 16"
+        android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="30sp"
-        />
+        app:cardCornerRadius="7dp"
+        app:cardBackgroundColor="@color/primary"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/lighGray"
+        >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group 16"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1"
+        app:cardCornerRadius="7dp"
+        app:cardBackgroundColor="@color/primary"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/lighGray"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alaki Team"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:cardCornerRadius="7dp"
+        app:cardBackgroundColor="@color/primary"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/lighGray"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alireza Azizi   96521362"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"/>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:cardCornerRadius="7dp"
+        app:cardBackgroundColor="@color/primary"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/lighGray"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mehdi Bakhshali   96521092"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"/>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

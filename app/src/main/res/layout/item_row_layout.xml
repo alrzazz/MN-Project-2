@@ -6,7 +6,6 @@
     android:id="@+id/itemRowLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     app:strokeColor="@color/black"
     app:cardCornerRadius="5dp"
     android:padding="10dp"
